@@ -23,4 +23,24 @@ body {
 
 body {
   font-family: "Space Grotesk", sans-serif;
+}
+
+.mar-bot-smallest {
+  margin-bottom: 1rem;
+}
+
+.mar-bot-small {
+  margin-bottom: 2.5rem;
+}
+
+.mar-bot-medium {
+  margin-bottom: 3rem;
+}
+
+.mar-bot-large {
+  margin-bottom: 4rem;
+}
+
+.mar-bot-largest {
+  margin-bottom: 5rem;
 }/*# sourceMappingURL=main.css.map */

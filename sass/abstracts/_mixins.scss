@@ -1,1 +1,6 @@
 // We have to build up mixins
+@mixin switch {
+  if(background-color: $primary-color) {
+    color: $text-color;
+  }
+}
