@@ -1,0 +1,80 @@
+@use "../abstracts/" as *;
+
+.news {
+  color: $primary-color;
+  background-color: $text-color;
+}
+.news-header {
+  padding: 2rem;
+}
+
+.news1 {
+  &__container {
+    display: grid;
+    //grid-template-columns: 1fr 2fr;
+    grid-template-columns: 30% 70%;
+    gap: 3.5rem;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    h1 {
+      word-wrap: break-word;
+    }
+    p {
+      font-size: 1.4rem;
+      padding-bottom: 2.6rem;
+    }
+  }
+
+  &__right {
+  }
+
+  &__img-box {
+    width: 100%;
+    height: 90vh;
+
+    overflow: hidden;
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__img-caption-box {
+    display: flex;
+    padding: 0.5rem 0;
+    margin-bottom: 5rem;
+    div:first-child {
+      margin-right: 40%;
+    }
+  }
+
+  &__text {
+    width: 70%;
+  }
+}
+
+.news2 {
+  display: grid;
+  //grid-template-columns: 1fr 2fr;
+  grid-template-columns: 30% 70%;
+
+  gap: 3.5rem;
+  &__container {
+  }
+  &__right {
+    grid-column-start: 2;
+  }
+
+  &__text {
+    width: 80%;
+  }
+}
+
+.news-footer {
+  @include reverse-color($primary-color, $text-color);
+}

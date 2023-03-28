@@ -1,0 +1,87 @@
+@use "../abstracts/" as *;
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.sorisha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40rem;
+
+  &__left {
+    flex: 0 0 60%;
+    span {
+      font-weight: 700;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+
+  &__right {
+    flex: 0 0 40%;
+    align-self: flex-start;
+    img {
+      display: block;
+      margin-left: auto;
+    }
+  }
+}
+
+.cards {
+  &__text {
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    position: relative;
+    left: -2rem;
+    margin-bottom: 4rem;
+  }
+  &__container {
+    border-left: 2px solid $text-color;
+    display: flex;
+    padding-left: 6rem;
+    justify-content: space-between;
+  }
+}
+
+.tingting {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16.5rem;
+  align-items: center;
+
+  &__left {
+  }
+
+  &__right {
+  }
+  &__img {
+    max-width: 100%;
+  }
+}
+
+// ABOUT section

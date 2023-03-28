@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+.nav {
+  display: flex;
+  gap: 4rem;
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}

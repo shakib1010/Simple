@@ -1,0 +1,13 @@
+.card {
+  max-width: 51rem;
+  //   height: 70.02rem;
+
+  &__img-box {
+    width: 100%;
+    height: 60rem;
+    overflow: hidden;
+  }
+  &__img {
+    max-width: 100%;
+  }
+}
