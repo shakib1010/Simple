@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 html {
   font-size: 62.5%;
 }
@@ -13,9 +15,18 @@ html {
 body {
   font-size: 1.6rem;
   overflow-x: hidden;
+  // background-color: #fff;
+  background-color: darkgray;
 }
 
 .container {
   max-width: 172rem;
   margin: 0 auto;
+  @include respond(big-desktop) {
+    padding: 0 5rem;
+  }
+}
+
+.bg {
+  background-color: #fff;
 }

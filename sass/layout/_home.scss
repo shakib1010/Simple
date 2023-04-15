@@ -14,6 +14,7 @@
   }
 }
 
+// HEADER STYLES
 .header {
   position: fixed;
   width: 100%;
@@ -24,6 +25,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond(tab-land) {
+    }
   }
 }
 
@@ -32,6 +36,7 @@
   align-items: center;
   justify-content: space-between;
   min-height: 40rem;
+  color: $text-color;
 
   &__left {
     flex: 0 0 60%;
@@ -60,11 +65,15 @@
     left: -2rem;
     margin-bottom: 4rem;
   }
+
   &__container {
-    border-left: 2px solid $text-color;
     display: flex;
     padding-left: 6rem;
     justify-content: space-between;
+  }
+
+  &__border {
+    border-left: 2px solid $text-color;
   }
 }
 
@@ -73,6 +82,7 @@
   grid-template-columns: 1fr 2fr;
   gap: 16.5rem;
   align-items: center;
+  color: $text-color;
 
   &__left {
   }

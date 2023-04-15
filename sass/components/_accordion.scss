@@ -2,8 +2,13 @@
 
 .accordion {
   border-top: 4px solid $primary-color;
-  border-bottom: 4px solid $primary-color;
+  border-collapse: collapse;
   text-transform: uppercase;
+  border-bottom: 4px solid $primary-color;
+
+  &:not(:last-child) {
+    border-bottom: none;
+  }
 
   &__heading {
     display: grid;

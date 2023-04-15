@@ -1,0 +1,60 @@
+@use "../abstracts/" as *;
+.contact {
+  color: $text-color;
+}
+.contact-header {
+  a {
+    color: $text-color;
+  }
+}
+
+.contact1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+
+  &__left {
+    overflow: hidden;
+
+    &-img-box {
+      height: 159rem;
+      position: relative;
+    }
+    img {
+      max-width: 200%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    &-info {
+      &-box {
+      }
+      &-tingting {
+        text-transform: lowercase;
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: $text-color;
+      }
+    }
+
+    p {
+      // justify-self: flex-end;
+      margin-top: auto;
+    }
+  }
+}
+
+.cards__container-contact {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 3rem;
+}

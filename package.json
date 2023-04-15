@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/Puavavax/Simple.git"
   },
-  "author": "Ragib shahria and Shakibul Islam (Shakib)",
+  "author": "Ragib shahriar and Shakibul Islam (Shakib)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Puavavax/Simple/issues"
   },
-  "homepage": "https://github.com/Puavavax/Simple#readme"
+  "homepage": "https://github.com/Puavavax/Simple#readme",
+  "dependencies": {
+    "gsap": "^3.11.5"
+  }
 }

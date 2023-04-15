@@ -9,6 +9,7 @@
 }
 
 .news1 {
+  padding-top: 25rem;
   &__container {
     display: grid;
     //grid-template-columns: 1fr 2fr;
@@ -34,14 +35,12 @@
   }
 
   &__img-box {
-    width: 100%;
-    height: 90vh;
-
+    height: 134.5rem;
     overflow: hidden;
   }
 
   &__img {
-    height: 100%;
+    max-width: 100%;
   }
 
   &__img-caption-box {

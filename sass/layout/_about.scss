@@ -1,25 +1,41 @@
 @use "../abstracts/" as *;
 
-.about-bg {
-  background-color: $text-color;
-  color: $primary-color;
+#rightTextSlide .word {
+  transform: translateX(1000px);
+  transition: all 0.5s;
+}
+
+.leftTextSlide .word {
+  transform: translateX(-1000px);
+  transition: all 0.5s;
+}
+
+.left-text {
+  transform: translateY(1000px);
+  transition: all 0.5s;
 }
 
 .page1 {
+  padding-top: 18rem;
+
   &__container {
     @include grid-1;
     grid-template-rows: 1fr 1fr;
   }
 
   &__left {
-    flex: 0 0 40%;
+    flex: 0 0 30%;
+    overflow: hidden;
 
     h1 {
       text-align: right;
+      position: relative;
+      top: 4.7rem;
     }
   }
 
   &__right {
+    overflow: hidden;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -101,7 +117,7 @@
   &__right {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16.5rem;
+    column-gap: 16.5rem;
 
     &-box {
       width: 80%;
@@ -123,4 +139,8 @@
       max-width: 80%;
     }
   }
+}
+
+.footer__about {
+  @include reverse-color($primary-color, $text-color);
 }
