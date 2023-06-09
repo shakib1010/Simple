@@ -9,8 +9,14 @@
 
 $breakpoint argument choices:
 - phone
+- phone-1
+- phone-2
 - tab-port
+- tab-port-1
+- tab-port-2
 - tab-land
+- tab-land-1
+- tab-land-2
 - big-desktop
 
 ORDER: Base + typography > general layout + grid > page layout > components
