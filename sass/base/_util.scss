@@ -1,5 +1,6 @@
 @use "../abstracts/" as *;
 // Margin bottom
+
 .mar-bot-smallest {
   margin-bottom: 1rem;
 }
@@ -15,6 +16,7 @@
 .mar-bot-large {
   margin-bottom: 4rem;
 }
+
 .mar-bot-largest {
   margin-bottom: 5rem;
 }
@@ -34,9 +36,11 @@
 .mar-top-medium {
   margin-top: 8rem;
 }
+
 .mar-top-large {
   margin-top: 12rem;
 }
+
 .mar-top-largest1 {
   margin-top: 20rem;
 }
@@ -44,6 +48,7 @@
 .section-pad1 {
   padding-bottom: 14rem;
 }
+
 
 .d-none {
   display: none !important;
@@ -56,9 +61,4 @@
 
 .show {
   opacity: 1;
-}
-
-.bg-dark {
-  background-color: $text-color;
-  color: #fff;
 }

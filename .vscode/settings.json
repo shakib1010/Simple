@@ -1,4 +1,12 @@
 {
   "liveServer.settings.port": 5501,
-  "cSpell.words": ["Logox", "sorisha"]
+  "cSpell.words": [
+    "Logox",
+    "sorisha"
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#07360A",
+    "titleBar.activeBackground": "#0A4B0E",
+    "titleBar.activeForeground": "#F0FDF1"
+  }
 }
