@@ -9,35 +9,32 @@
     <script defer src="js/script.js"></script>
   </head>
   <body>
-    <div class="bg">
-      <header class="hero">
+    <div class="bg-light footer-space">
+      <!-- SECTION HERO -->
+      <header class="hero mar-bot-largest-1">
         <video class="hero__video" autoplay loop>
           <source src="img/videos/header-bg.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        <nav class="nav">
+        <na00v class="nav">
           <div class="container nav__container">
-            <img src="img/logoooooo.svg" alt="" class="nav__logo" />
+            <a href="index.html">
+              <img src="img/logoooooo.svg" alt="" class="nav__logo"
+            /></a>
 
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__link">Work</a>
+                <a href="index.html" class="nav__link">Home</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">About</a>
+                <a href="about.html" class="nav__link">About</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">News</a>
+                <a href="news.html" class="nav__link">News</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">Thinking</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Careers</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Contact</a>
+                <a href="contact.html" class="nav__link">Contact</a>
               </li>
             </ul>
 
@@ -50,37 +47,95 @@
               />
             </div>
           </div>
-        </nav>
+        </na00v>
       </header>
 
-      <section class="sorisha container mar-top-large hidden bg">
-        <div class="sorisha__left">
-          <p class="paragraph paragraph2 mar-bot-large">
+      <!-- SECTION WORK -->
+      <section class="work container mar-bot-largest">
+        <div class="work__left">
+          <p class="paragraph2 mar-bot-large">
             <span>SIMP/DEPT®</span> is a global branding and digital design
             agency building products, services, and eCommerce experiences that
             turn cultural values into company value.
           </p>
-          <button class="btn btn__black">
-            <span class="btn__icon-box"
-              ><img
+
+          <button class="btn btn__dark">
+            <span class="btn-txt">See the work</span>
+            <span class="btn__icon-box">
+              <img
                 class="btn__icon"
                 src="img/icons/arrow-forward-outline.svg"
                 alt=""
-            /></span>
-            See the work
+              />
+            </span>
           </button>
         </div>
-        <div class="sorisha__right">
+        <div class="work__right">
           <img src="img/logox.svg" alt="Logox of the year" />
         </div>
       </section>
 
-      <section class="cards container mar-top-large hidden bg">
+      <!-- SECTION -->
+      <!-- <section class="cards container mar-bot-largest-1">
         <div class="cards__text paragraph2">Gallery</div>
         <div class="cards__container cards__border">
-          <!-- card 1 -->
+          <div class="card">
+            <div class="card__img-box">
+              <img
+                src="img/alain-bonnardeaux-Bsf_yk3HcsE-unsplash.jpg"
+                alt=""
+                class="card__img"
+              />
+            </div>
+            <h3 class="card__title sub-heading-card mar-bot-smallest">
+              Patagonia
+            </h3>
+            <p class="paragraph-card">
+              A CENTURY-OLD SPORTS BRAND FINDING ITS PLACE IN CULTURE
+            </p>
+          </div>
+
           <div class="card card--regular">
             <div class="card__img-box mar-bot-small">
+              <img
+                src="img/jakob-owens-A4579vLezz8-unsplash.jpg"
+                alt=""
+                class="card__img"
+              />
+            </div>
+            <h3 class="card__title sub-heading-card mar-bot-smallest">Asics</h3>
+            <p class="paragraph-card">
+              A CENTURY-OLD SPORTS BRAND FINDING ITS PLACE IN CULTURE
+            </p>
+          </div>
+
+          <div class="card card--regular">
+            <div class="card__img-box mar-bot-small">
+              <img
+                src="img/alireza-khoddam-z4O2cuwP8Qg-unsplash.jpg"
+                alt=""
+                class="card__img"
+              />
+            </div>
+            <h3 class="card__title sub-heading-card mar-bot-smallest">
+              Apple Store
+            </h3>
+            <p class="paragraph-card">
+              AN ECOMMERCE EXPERIENCE HELPING APPLE BRINGS ITS HARDWARE TO
+              PEOPLE ACROSS THE GLOBE
+            </p>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="h-cards container mar-bot-largest-1">
+        <div class="h-cards__text">Gallery</div>
+        <div class="h-cards__line">&nbsp;</div>
+
+        <div class="h-cards__container">
+          <!-- card 1 -->
+          <div class="card">
+            <div class="card__img-box">
               <img
                 src="img/alain-bonnardeaux-Bsf_yk3HcsE-unsplash.jpg"
                 alt=""
@@ -131,10 +186,8 @@
       </section>
 
       <!-- advertisement -->
-
-      <section class="add mar-top-largest1 hidden bg">
+      <!-- <section class="add mar-top-largest1 hidden bg">
         <div class="add__track">
-          <!-- All items -->
           <div class="add__item">
             <img src="img/asics.svg" alt="" srcset="" />
           </div>
@@ -171,7 +224,7 @@
             <img src="img/icons/advertisement/svg2191.svg" alt="" srcset="" />
           </div>
 
-          <!-- Copied items -->
+         
           <div class="add__item">
             <img src="img/asics.svg" alt="" srcset="" />
           </div>
@@ -207,92 +260,92 @@
             <img src="img/icons/advertisement/svg2191.svg" alt="" srcset="" />
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <!-- tingting -->
-      <div class="container mar-bot-ultra-largest hidden last-element">
-        <section class="tingting">
-          <div class="tingting__left">
-            <h1 class="h1 heading">
-              SIMP/<br />
-              DEPT®
-              <br />HELPS BRANDS
-              <br />
-              CONNECT W/ CULTURE
-            </h1>
-          </div>
-          <div class="tingting__right">
-            <img
-              src="img/pexels-athena-2043590.jpg"
-              alt=""
-              class="tingting__img"
-            />
-          </div>
-        </section>
-      </div>
+      <!-- BANNER -->
+      <section class="banner container section-pad1">
+        <div class="banner__left">
+          <h1 class="heading">
+            SIMP/<br />
+            DEPT®
+            <br />HELPS BRANDS
+            <br />
+            CONNECT W/ CULTURE
+          </h1>
+        </div>
+
+        <div class="banner__right">
+          <img src="img/pexels-athena-2043590.jpg" alt="" class="banner__img" />
+        </div>
+      </section>
     </div>
+
     <!-- Footer -->
-    <footer>
-      <section class="footer mar-top-largest1">
-        <div class="container footer__container">
-          <div class="footer__left">
-            <img src="img/logoxxx.svg" alt="" class="footer__left-logo" />
+    <footer class="footer footer--dark mar-top-largest1">
+      <div class="container footer__container">
+        <div class="footer__left">
+          <img src="img/logoxxx.svg" alt="" class="footer__logo" />
 
-            <div class="footer__email-box">
-              <h5 class="sub-heading-card">Email Address</h5>
-              <img src="img/Arrow 1.svg" alt="" />
-            </div>
-          </div>
-
-          <div class="footer__right">
-            <h4 class="sub-heading">
-              We collaborate with ambitious brands and people. Let's build.
-              biz@basicagency.com
-            </h4>
-
-            <div class="footer__infos">
-              <div>
-                <h5 class="paragraph3 sub-heading-card">SOCIAL</h5>
-                <ul>
-                  <li>Instagram</li>
-                  <li>Twitter</li>
-                  <li>Facebook</li>
-                  <li>Linkedin</li>
-                </ul>
-              </div>
-
-              <div>
-                <h5 class="paragraph3 sub-heading-card">INITIATIVES</h5>
-                <ul>
-                  <li>Crafted</li>
-                  <li>Applied</li>
-                  <li>Brandbeats</li>
-                  <li>Moves</li>
-                  <li>Good</li>
-                </ul>
-              </div>
-
-              <div>
-                <h5 class="paragraph3 sub-heading-card">OFFICES</h5>
-                <ul>
-                  <li>San Diego - CA</li>
-                  <li>New York - NY</li>
-                  <li>Bay Area - CA</li>
-                  <li>St. Louis - MO</li>
-                  <li>Amsterdam - NL</li>
-                  <li>London - EN</li>
-                  <li>Berlin - GE</li>
-                  <li>Argentina</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- </div>
-    </div> -->
+          <form action="#" class="footer__form">
+            <input
+              class="footer__input"
+              type="text"
+              name="f-name"
+              id="f-name"
+              placeholder="example@gmail.com"
+            />
+            <button type="submit" class="footer__btn">
+              <img src="img/arrow-light.svg" alt="" />
+            </button>
+          </form>
         </div>
-      </section>
+
+        <div class="footer__right">
+          <h4 class="sub-heading">
+            We collaborate with ambitious brands and people. Let's build.
+            biz@basicagency.com
+          </h4>
+
+          <div class="footer__infos">
+            <div>
+              <h5 class="paragraph3 sub-heading-card">SOCIAL</h5>
+              <ul>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>Facebook</li>
+                <li>Linkedin</li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="paragraph3 sub-heading-card">INITIATIVES</h5>
+              <ul>
+                <li>Crafted</li>
+                <li>Applied</li>
+                <li>Brandbeats</li>
+                <li>Moves</li>
+                <li>Good</li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="paragraph3 sub-heading-card">OFFICES</h5>
+              <ul>
+                <li>San Diego - CA</li>
+                <li>New York - NY</li>
+                <li>Bay Area - CA</li>
+                <li>St. Louis - MO</li>
+                <li>Amsterdam - NL</li>
+                <li>London - EN</li>
+                <li>Berlin - GE</li>
+                <li>Argentina</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+
     <!-- IonIcon  -->
     <script
       type="module"

@@ -1,0 +1,179 @@
+@use "../abstracts/" as *;
+
+// //////////// ABOUT HEADER ////////////////
+.about-header {
+  color: $primary-color;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, min-content);
+    grid-gap: 3rem;
+    padding-top: 16rem;
+  }
+
+  &__heading-1 {
+    text-align: end;
+    margin-bottom: -14rem;
+  }
+
+  &__heading-2 {
+    grid-row: 2 / 3;
+    grid-column: 2 / -1;
+  }
+
+  &__text {
+    grid-row: 3 / -1;
+    grid-column: 2 / -1;
+    margin-top: 6rem;
+  }
+}
+
+// ///////// ABOUT PHOTOS //////////
+// .photos {
+//   padding: 5rem;
+//   color: $primary-color;
+
+//   &__container {
+//     border-left: 2px solid $primary-color;
+//     min-height: 90rem;
+//     @include grid-1;
+//   }
+
+//   &__left {
+//     position: relative;
+//   }
+
+//   &__right {
+//     position: relative;
+//   }
+
+//   &__text {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 25rem;
+//     padding: 5rem;
+//   }
+
+//   &__img {
+//     max-width: 50rem;
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//   }
+
+//   &__img--1 {
+//     top: -20rem;
+//     left: 0;
+//   }
+
+//   &__img--2 {
+//     top: -5rem;
+//     left: 20%;
+//   }
+
+//   &__img--3 {
+//     top: 10rem;
+//     left: 40%;
+//   }
+// }
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  color: $primary-color;
+
+  &__left {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: 3rem;
+  }
+
+  &__text {
+    grid-column: 1/ 2;
+
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    position: relative;
+    left: -2rem;
+    font-size: 3rem;
+  }
+
+  &__line {
+    grid-column: 1 / 2;
+
+    width: 2px;
+    height: 100%;
+    background-color: $primary-color;
+  }
+
+  &__info {
+    grid-column: 2 / 3;
+    align-self: end;
+    width: 25rem;
+    margin-left: -2rem;
+  }
+
+  &__right {
+    overflow: hidden;
+  }
+}
+
+// ////// page 4 ///////////
+
+.page3 {
+  border-top: 1px solid $primary-color;
+  img {
+    display: block;
+    padding: 3rem 0;
+  }
+}
+
+// ////// page 4 ///////////
+.page4 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+
+  color: $primary-color;
+
+  &__left {
+  }
+
+  &__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16.5rem;
+    row-gap: 10rem;
+    &-box {
+      width: 80%;
+    }
+  }
+}
+
+// //////page 5 ///////////
+
+.page5 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  color: $primary-color;
+
+  &__left {
+  }
+
+  &__right {
+    p {
+      max-width: 80%;
+    }
+  }
+}
+
+// //////page 6 ///////////
+
+.page6 {
+  color: $primary-color;
+}

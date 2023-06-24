@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
-// Margin bottom
 
+// MARGIN BOTTOM
 .mar-bot-smallest {
   margin-bottom: 1rem;
 }
@@ -18,17 +18,22 @@
 }
 
 .mar-bot-largest {
-  margin-bottom: 5rem;
-}
-
-.mar-bot-ultra-largest {
-  margin-bottom: 7rem;
-}
-
-.mar-bot-largest-1 {
   margin-bottom: 8rem;
 }
 
+.mar-bot-ultra-largest {
+  margin-bottom: 16rem;
+}
+
+.mar-bot-largest-1 {
+  margin-bottom: 20rem;
+}
+
+.mar-bot-largest-2 {
+  margin-bottom: 26rem;
+}
+
+// MARGIN TOP
 .mar-top-small {
   margin-top: 4rem;
 }
@@ -45,20 +50,12 @@
   margin-top: 20rem;
 }
 
+// SECTION PADDING
 .section-pad1 {
   padding-bottom: 14rem;
 }
 
-
+// DISPLAY
 .d-none {
   display: none !important;
-}
-
-.hidden {
-  opacity: 0;
-  transition: all 3s;
-}
-
-.show {
-  opacity: 1;
 }

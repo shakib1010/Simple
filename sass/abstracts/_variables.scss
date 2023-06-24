@@ -1,6 +1,9 @@
 // List of variables
 $primary-color: #fffffa;
-$text-color: #433a3f;
+$color-secondary: #433a3f;
+$color-white: #fff;
+
+$text-color: $color-secondary;
 
 // $paragraph: 1.6rem;
 // $paragraph2: 4rem;
@@ -8,5 +11,3 @@ $text-color: #433a3f;
 // $sub-heading: 3.2rem medium
 // $sub-heading(footer): 3.2/2.4rem bold - black(for footer message)
 // $big-heading: 15rem black
-
-

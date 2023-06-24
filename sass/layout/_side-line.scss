@@ -1,0 +1,21 @@
+.side-line {
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-rows: min-content 1fr;
+  height: 100%;
+
+  &__text {
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    position: relative;
+    left: -2rem;
+    margin-bottom: 4rem;
+  }
+
+  &__line {
+    width: 2px;
+    height: 100%;
+    background-color: azure;
+  }
+}

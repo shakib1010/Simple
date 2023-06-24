@@ -53,8 +53,53 @@
   }
 }
 
-.cards__container-contact {
+// Contact cards
+
+.cards {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+  }
+
+  &__holder {
+    grid-column: 2 / -1;
+  }
+}
+
+// .cards__container-contact {
+//   display: grid;
+//   grid-template-columns: 30% 70%;
+//   gap: 3rem;
+// }
+
+// Contact card
+
+.c-cards {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: min-content min-content;
   gap: 3rem;
+
+  &__text {
+    grid-row: 1 / 2;
+
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    position: relative;
+    left: -2rem;
+    font-size: 3rem;
+  }
+
+  &__line {
+    grid-row: 2 / -1;
+    width: 2px;
+    height: 100%;
+    background-color: $color-secondary;
+  }
+
+  &__container {
+    grid-row: 2 / -1;
+  }
 }

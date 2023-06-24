@@ -6,13 +6,21 @@
 
 .footer {
   position: fixed;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  height: 100%;
-  background: $text-color;
-  color: $primary-color;
+  height: 100vh;
   z-index: -3;
+
+  &--light {
+    background: $primary-color;
+    color: $text-color;
+  }
+
+  &--dark {
+    background: $text-color;
+    color: $primary-color;
+  }
 
   &__container {
     display: grid;
@@ -25,31 +33,56 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
+  }
 
-    &-logo {
-      height: 30rem;
-      position: relative;
+  &__logo {
+    height: 30rem;
+    position: relative;
+    top: -5rem;
+    left: -1rem;
+  }
 
-      top: -5rem;
-      left: -1rem;
+  &__form {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid currentColor;
+  }
+
+  &__input {
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: inherit;
+    color: currentColor;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: currentColor;
+      font-size: inherit;
     }
   }
 
-  &__email-box {
-    align-items: center;
-    justify-content: space-between;
-    width: 60%;
-    display: flex;
-    border-bottom: 2px solid currentColor;
-    h5 {
-      padding-bottom: 1.5rem;
-    }
+  &__btn {
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: none;
+    margin-left: -4rem;
+    cursor: pointer;
   }
 
   &__right {
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
   }
 

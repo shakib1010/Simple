@@ -1,10 +1,12 @@
 @use "../abstracts/" as *;
 
 .accordion {
-  border-top: 4px solid $primary-color;
+  border-top: 2px solid $primary-color;
   border-collapse: collapse;
   text-transform: uppercase;
-  border-bottom: 4px solid $primary-color;
+  border-bottom: 2px solid $primary-color;
+  font-size: 3.2rem;
+  color: $primary-color;
 
   &:not(:last-child) {
     border-bottom: none;
@@ -12,19 +14,12 @@
 
   &__heading {
     display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 3rem;
+    grid-template-columns: 3fr 3fr 1fr;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem;
   }
 
   &__title {
-  }
-
-  &__text-box {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    align-items: center;
   }
 
   &__text {
@@ -36,16 +31,17 @@
   }
 
   .accordion__body {
-    max-height: 0;
+    height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 
     p {
-      padding: 2rem 0;
+      padding: 2rem;
+      font-size: 1.8rem;
     }
 
     &--open {
-      max-height: 200px;
+      height: auto;
     }
   }
 }

@@ -8,59 +8,51 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="bg-dark">
-      <header class="header">
-        <div class="container">
-          <nav class="header__nav mar-top-small">
-            <img src="img/logoooooo.svg" alt="" class="header__logo" />
-            <ul class="nav">
-              <li class="nav__item">
-                <a href="./" class="nav__link">Work</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">About</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">News</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Thinking</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Careers</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Contact</a>
-              </li>
-            </ul>
-            <div class="header__menu-btn">
-              <img
-                src="img/icons/threeDots.svg"
-                alt=""
-                srcset=""
-                class="dots"
-              />
-            </div>
-          </nav>
-        </div>
-      </header>
+    <div class="bg-dark footer-space">
+      <nav class="nav">
+        <div class="container nav__container">
+          <a href="index.html">
+            <img src="img/logoooooo.svg" alt="" class="nav__logo"
+          /></a>
 
-      <section class="page1 d-none">
-        <div class="container page1__container">
-          <div class="page1__left">
-            <h1 class="heading" id="rightTextSlide">WE TURN OUR DESIGN</h1>
-          </div>
-          <div class="page1__right">
-            <h1 class="heading mar-bot-ultra-largest leftTextSlide">
-              INTO AN EXPERIENCE.
-            </h1>
-            <p class="paragraph paragraph2 mar-bot-ultra-largest left-text">
-              <span>SIMP/DEPT®</span>is a global agency that thrives at the
-              intersection of design, data, and technology. Together, we’re
-              focused on transforming brands and culture — across the world.
-            </p>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="news.html" class="nav__link">News</a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav__menu-btn">
+            <img src="img/icons/threeDots.svg" alt="" srcset="" class="dots" />
           </div>
         </div>
+      </nav>
+
+      <header class="about-header">
+        <div class="container about-header__container">
+          <h1 class="heading about-header__heading-1" id="rightTextSlide">
+            WE TURN OUR DESIGN
+          </h1>
+
+          <h1 class="heading about-header__heading-2">INTO AN EXPERIENCE.</h1>
+
+          <p
+            class="paragraph paragraph2 mar-bot-ultra-largest about-header__text"
+          >
+            <span>SIMP/DEPT®</span>is a global agency that thrives at the
+            intersection of design, data, and technology. Together, we’re
+            focused on transforming brands and culture — across the world.
+          </p>
+        </div>
+
         <div class="divider container section-pad1">
           <div class="divider__left">
             <img class="divider__logo" src="img/logoxxx.svg" alt="" />
@@ -70,9 +62,9 @@
             <span class="divider__dot"></span>
           </div>
         </div>
-      </section>
+      </header>
 
-      <section class="photos container mar-bot-largest-1 d-none">
+      <!-- <section class="photos container mar-bot-largest-1">
         <div class="cards__text paragraph2">Photos</div>
         <div class="photos__container">
           <div class="photos__left">
@@ -87,11 +79,13 @@
               alt=""
               class="photos__img photos__img--1"
             />
+
             <img
               src="img/alain-bonnardeaux-Bsf_yk3HcsE-unsplash.jpg"
               alt=""
               class="photos__img photos__img--2"
             />
+
             <img
               src="img/alain-bonnardeaux-Bsf_yk3HcsE-unsplash.jpg"
               alt=""
@@ -99,13 +93,48 @@
             />
           </div>
         </div>
+      </section> -->
+
+      <section class="photos container mar-bot-largest-1">
+        <div class="photos__left">
+          <div class="photos__text">Photos</div>
+          <div class="photos__line">&nbsp;</div>
+          <p class="photos__info">
+            EASY TO UNDERSTAND. IMPOSSIBLE TO IGNORE.™ BASIC/DEPT®, INC 10 - 23©
+          </p>
+        </div>
+
+        <div class="photos__right">
+          <div class="photos__img-box">
+            <img
+              src="img/alain-bonnardeaux-Bsf_yk3HcsE-unsplash.jpg"
+              alt=""
+              class="photos__img photos__img--1"
+            />
+          </div>
+
+          <div class="photos__img-box">
+            <img
+              src="img/alain-bonnardeaux-Bsf_yk3HcsE-unsplash.jpg"
+              alt=""
+              class="photos__img photos__img--1"
+            />
+          </div>
+
+          <div class="photos__img-box">
+            <img
+              src="img/alain-bonnardeaux-Bsf_yk3HcsE-unsplash.jpg"
+              alt=""
+              class="photos__img photos__img--1"
+            />
+          </div>
+        </div>
       </section>
 
-      <section class="d-none page3 container">
+      <section class="page3 container">
         <img src="img/DEPT®.png" alt="" class="" />
-        <div class="divider">
+        <div class="divider divider__about">
           <div class="divider__left">
-            <!-- <img class="divider__logo" src="img/logoxxx.svg" alt="" /> -->
             <p class="divider__text">SEC</p>
           </div>
           <div class="divider__right">
@@ -115,9 +144,7 @@
         </div>
       </section>
 
-      <section
-        class="page4 container mar-top-large mar-bot-ultra-largest d-none"
-      >
+      <section class="page4 container mar-top-large mar-bot-largest-1">
         <div class="page4__left">
           <h3 class="sub-heading-agency">
             Agency <br />
@@ -125,8 +152,7 @@
           </h3>
         </div>
         <div class="page4__right">
-          <!-- 1 -->
-          <div class="page4__right-box mar-bot-largest-1">
+          <div class="page4__right-box">
             <h5 class="sub-heading mar-bot-smallest">People</h5>
             <h2 class="sub-heading-number mar-bot-smallest">120+</h2>
             <p class="paragraph3">
@@ -134,8 +160,8 @@
               great work as well as be great to work with.
             </p>
           </div>
-          <!-- 2 -->
-          <div class="page4__right-box mar-bot-largest-1">
+
+          <div class="page4__right-box">
             <h5 class="sub-heading mar-bot-smallest">Years</h5>
             <h2 class="sub-heading-number mar-bot-smallest">5</h2>
             <p class="paragraph3">
@@ -144,8 +170,7 @@
             </p>
           </div>
 
-          <!-- 3 -->
-          <div class="page4__right-box mar-bot-largest-1">
+          <div class="page4__right-box">
             <h5 class="sub-heading mar-bot-smallest">Services</h5>
             <h2 class="sub-heading-number mar-bot-smallest">4</h2>
             <p class="paragraph3">
@@ -155,8 +180,7 @@
             </p>
           </div>
 
-          <!-- 4 -->
-          <div class="page4__right-box mar-bot-largest-1">
+          <div class="page4__right-box">
             <h5 class="sub-heading mar-bot-smallest">Global Research</h5>
             <h2 class="sub-heading-number mar-bot-smallest">39</h2>
             <p class="paragraph3">
@@ -164,8 +188,8 @@
               great work as well as be great to work with.
             </p>
           </div>
-          <!-- 5 -->
-          <div class="page4__right-box mar-bot-largest-1">
+
+          <div class="page4__right-box">
             <h5 class="sub-heading mar-bot-smallest">Growth</h5>
             <h2 class="sub-heading-number mar-bot-smallest">111%</h2>
             <p class="paragraph3">
@@ -174,9 +198,8 @@
               years. We’re hiring btw.
             </p>
           </div>
-          <!-- 6 -->
 
-          <div class="page4__right-box mar-bot-largest-1">
+          <div class="page4__right-box">
             <h5 class="sub-heading mar-bot-smallest">Ranking</h5>
             <h2 class="sub-heading-number mar-bot-smallest">2</h2>
             <p class="paragraph3">
@@ -188,27 +211,26 @@
         </div>
       </section>
 
-      <div class="d-none divider container">
+      <div class="divider container divider__about">
         <div class="divider__left">
           <span class="divider__text">SEC.</span>
         </div>
-
         <div class="divider__right">
           <span class="divider__text">/B</span>
           <span class="divider__dot"></span>
         </div>
       </div>
+
       <!-- Team and Leadership -->
 
-      <section
-        class="d-none page5 container mar-top-large mar-bot-ultra-largest section-pad1"
-      >
+      <section class="page5 container mar-top-large mar-bot-largest-1">
         <div class="page5__left">
           <h3 class="sub-heading-agency">
             Team <br />
             & Leadership
           </h3>
         </div>
+
         <div class="page5__right">
           <div class="page5__right">
             <p class="paragraph paragraph2 mar-bot-ultra-largest">
@@ -217,14 +239,23 @@
               forward and we see our agency as a place for our shared values to
               collide.
             </p>
-            <button class="btn btn__light">FULL AWARDS LIST</button>
+            <button class="btn btn__light">
+              <span class="btn-txt">See the work</span>
+              <span class="btn__icon-box">
+                <img
+                  class="btn__icon"
+                  src="img/icons/arrow-forward-outline.svg"
+                  alt=""
+                />
+              </span>
+            </button>
           </div>
         </div>
       </section>
 
-      <section class="d-none page6 container last-element">
+      <section class="page6 container last-element">
         <div class="credit mar-bot-medium">
-          <div class="credit__img-box credit__img-box--1">Img</div>
+          <div class="credit__img-box credit__img-box--1"></div>
           <div class="credit__text-box credit__text-box--1">
             <h4 class="credit__title mar-bot-small sub-heading-agency">
               DESIGN AND DEVELOPMENT
@@ -249,19 +280,25 @@
           <div class="credit__img-box credit__img-box--2">Img</div>
         </div>
       </section>
-
-      <!-- Footer -->
     </div>
 
-    <section class="d-none footer footer__about">
+    <footer class="footer mar-top-largest1 footer--light">
       <div class="container footer__container">
         <div class="footer__left">
-          <img src="img/logoxxx-dark.svg" alt="" class="footer__left-logo" />
+          <img src="img/logoxxx-dark.svg" alt="" class="footer__logo" />
 
-          <div class="footer__email-box">
-            <h5 class="sub-heading-card">Email Address</h5>
-            <img src="img/Arrow 1 kaillah.svg" alt="" />
-          </div>
+          <form action="#" class="footer__form">
+            <input
+              class="footer__input"
+              type="text"
+              name="f-name"
+              id="f-name"
+              placeholder="example@gmail.com"
+            />
+            <button type="submit" class="footer__btn">
+              <img src="img/arrow-dark.svg" alt="" />
+            </button>
+          </form>
         </div>
 
         <div class="footer__right">
@@ -308,7 +345,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
     <script
       type="module"

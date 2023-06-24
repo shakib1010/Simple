@@ -3,6 +3,10 @@
 .divider {
   @include grid-1;
 
+  &__about {
+    color: $primary-color;
+  }
+
   &__left {
     border-top: 2px solid $primary-color;
     padding-top: 1rem;
