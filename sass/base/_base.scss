@@ -1,7 +1,15 @@
 @use "../abstracts/" as *;
 
+.d-none {
+  display: none;
+}
+
 html {
   font-size: 62.5%;
+
+  @include respond(bp-15) {
+    font-size: 50%;
+  }
 }
 
 *,
@@ -19,6 +27,7 @@ body {
 .container {
   max-width: 172rem;
   margin: 0 auto;
+  padding: 0 3rem;
 }
 
 .bg-light {
@@ -26,7 +35,7 @@ body {
 }
 
 .bg-dark {
-  background-color: $color-secondary;
+  background-color: $secondary-color;
 }
 
 .footer-space {

@@ -1,14 +1,20 @@
 @use "../abstracts/" as *;
 
 .divider {
-  @include grid-1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
 
-  &__about {
+  &--light {
     color: $primary-color;
   }
 
+  &--dark {
+    color: $secondary-color;
+  }
+
   &__left {
-    border-top: 2px solid $primary-color;
+    border-top: 2px solid currentColor;
     padding-top: 1rem;
 
     img {
@@ -17,7 +23,7 @@
   }
 
   &__right {
-    border-top: 2px solid $primary-color;
+    border-top: 2px solid currentColor;
     padding-top: 1rem;
     display: flex;
     align-items: center;
@@ -25,6 +31,7 @@
   }
 
   &__text {
+    text-transform: uppercase;
   }
 
   &__dot {
@@ -33,38 +40,5 @@
     height: 1.5rem;
     border-radius: 50%;
     background-color: $primary-color;
-  }
-}
-
-.divider-dark {
-  @include grid-1;
-
-  &__left {
-    border-top: 2px solid $text-color;
-    padding-top: 1rem;
-
-    img {
-      width: 5rem;
-    }
-  }
-
-  &__right {
-    border-top: 2px solid $text-color;
-    padding-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &__text {
-    color: $text-color;
-  }
-
-  &__dot {
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    background-color: $text-color;
   }
 }
