@@ -12,6 +12,18 @@
     border-bottom: none;
   }
 
+  @include respond(bp-9) {
+    font-size: 2.8rem;
+  }
+
+  @include respond(bp-6) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(bp-4) {
+    font-size: 1.6rem;
+  }
+
   &__heading {
     display: grid;
     grid-template-columns: 3fr 3fr 1fr;
@@ -20,10 +32,13 @@
   }
 
   &__title {
+    // SEDDEM IN VOID
   }
 
   &__text {
+    // SEDDEM IN VOID
   }
+
 
   &__toggle span {
     font-size: 3rem;
@@ -38,6 +53,11 @@
     p {
       padding: 2rem;
       font-size: 1.8rem;
+      text-transform: none;
+
+      @include respond(bp-6) {
+        font-size: 1.4rem;
+      }
     }
 
     &--open {

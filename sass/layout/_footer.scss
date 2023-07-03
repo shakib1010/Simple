@@ -1,49 +1,71 @@
-@use "../abstracts/" as *;
-
-.last-element {
-  margin-bottom: 100vh;
-}
+@use '../abstracts/' as *;
 
 .footer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100vh;
+  min-height: 100vh;
   z-index: -3;
+  padding-top: 12rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(min-content, 1fr) 8rem;
+  gap: 8rem;
 
   &--light {
     background: $primary-color;
-    color: $text-color;
+    color: $secondary-color;
   }
 
   &--dark {
-    background: $text-color;
+    background: $secondary-color;
     color: $primary-color;
   }
 
-  &__container {
+  &__top {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 21rem 0;
+    gap: 3rem;
+
+    align-self: center;
+
+    @include respond(bp-10) {
+      grid-template-columns: 1fr;
+      gap: 8rem;
+    }
+
+    @include respond(bp-5) {
+      gap: 4rem;
+    }
   }
 
   &__left {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: space-between;
+    // Saddam in void
   }
 
   &__logo {
-    height: 30rem;
+    width: 80%;
     position: relative;
     top: -5rem;
-    left: -1rem;
+    left: -0.5rem;
+    display: block;
+    margin-bottom: -2rem;
+
+    @include respond(bp-10) {
+      width: auto;
+      height: 20rem;
+    }
+
+    @include respond(bp-5) {
+      height: 10rem;
+      margin-bottom: -4rem;
+    }
   }
 
   &__form {
-    width: 60%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,28 +102,51 @@
   }
 
   &__right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    //  Saddam in void
   }
 
   &__right h4 {
-    margin-bottom: 19rem;
+    margin-bottom: 15rem;
     text-transform: lowercase;
+    @include respond(bp-10) {
+      width: 80%;
+      margin-bottom: 8rem;
+    }
+
+    @include respond(bp-5) {
+      width: auto;
+      margin-bottom: 6rem;
+    }
   }
 
   &__infos {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 14rem;
+
+    @include respond(bp-10) {
+      gap: 6rem;
+    }
+
+    @include respond(bp-5) {
+      gap: 4rem;
+    }
   }
 
-  &__infos ul li {
+  &__infos ul {
     list-style: none;
-    font-size: 1.6rem;
-    font-weight: 300;
-    font-family: "Roboto", sans-serif;
+  }
+
+  &__infos ul li a {
+    &,
+    &:link,
+    &:active {
+      color: currentColor;
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 300;
+      font-family: 'Roboto', sans-serif;
+    }
   }
 
   &__infos ul li:not(:last-child) {
@@ -111,5 +156,29 @@
   &__infos h5 {
     margin-bottom: 3.5rem;
     font-weight: bold;
+  }
+
+  &__bottom {
+    height: 8rem;
+
+    &-container {
+      height: 100%;
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  &--dark &__bottom {
+    background-color: #00000080;
+  }
+
+  &--light &__bottom {
+    background-color: darkgray;
   }
 }
