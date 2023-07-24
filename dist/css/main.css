@@ -209,6 +209,10 @@ body {
   letter-spacing: 0.7px;
 }
 
+.split-text-target {
+  font-kerning: none;
+}
+
 .mar-bot-smallest {
   margin-bottom: 1rem;
 }
@@ -755,6 +759,9 @@ body {
   font-weight: 700;
   font-family: "Roboto", sans-serif;
 }
+.work__para {
+  overflow: hidden;
+}
 .work__right {
   flex: 0 0 40%;
   align-self: flex-start;
@@ -833,6 +840,9 @@ body {
     gap: 8rem;
   }
 }
+.banner__heading .line {
+  overflow: hidden;
+}
 .banner__right {
   align-self: stretch;
 }
@@ -856,6 +866,9 @@ body {
   text-align: end;
   margin-bottom: -14rem;
 }
+.about-header__heading-1 .line {
+  overflow: hidden;
+}
 @media only screen and (max-width: 50em) {
   .about-header__heading-1 {
     margin-bottom: 4rem;
@@ -867,6 +880,9 @@ body {
   grid-row: 2/3;
   grid-column: 2/-1;
   margin-bottom: 6rem;
+}
+.about-header__heading-2 .line {
+  overflow: hidden;
 }
 @media only screen and (max-width: 50em) {
   .about-header__heading-2 {
@@ -990,6 +1006,9 @@ body {
   }
 }
 
+.page3 {
+  overflow: hidden;
+}
 .page3__line {
   height: 3px;
   background-color: #fffffa;
@@ -1094,6 +1113,9 @@ body {
     grid-template-columns: 1fr;
     gap: 6rem;
   }
+}
+.contact1__heading .line {
+  overflow: hidden;
 }
 .contact1__left {
   overflow: hidden;
@@ -1213,6 +1235,9 @@ body {
 .news1__title-box h1 {
   word-wrap: break-word;
   margin-top: 15rem;
+}
+.news1__title-box h1 .line {
+  overflow: hidden;
 }
 @media only screen and (max-width: 50em) {
   .news1__title-box h1 {

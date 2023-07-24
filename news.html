@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Simple News</title>
     <link rel="stylesheet" href="dist/css/main.css" />
     <script defer src="js/script.js"></script>
+    <script defer src="js/animation-news.js"></script>
   </head>
   <body>
     <div class="bg-dark footer-space">
@@ -40,7 +41,7 @@
       <!-- section goes here -->
       <header class="news1 container mar-bot-largest-1">
           <div class="news1__title-box">
-            <h1 class="news1__title heading-1 sub-heading-number">
+            <h1 id="news1-title" class="news1__title heading-1 sub-heading-number">
               MAKE EXQUISITE DESIGNS TO GET HIRED.
             </h1>
 
@@ -225,14 +226,19 @@
       </div>
     </footer>
 
-    <!-- IonIcon  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+       <!-- IonIcon  -->
+       <script
+       type="module"
+       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+     ></script>
+     <script
+       nomodule
+       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+     ></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+     <!-- Minified UMD bundle -->
+     <script src="https://unpkg.com/split-type"></script>
+
   </body>
 </html>
