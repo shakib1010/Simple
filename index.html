@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="dist/css/main.css" />
     <script defer src="js/script.js"></script>
+    <script defer src="js/animation-home.js"></script>
   </head>
   <body>
     <div class="bg-light footer-space">
@@ -16,7 +17,7 @@
           <a href="index.html" class="nav__logo-box">
             <img src="img/logoooooo.svg" alt="" class="nav__logo"
           /></a>
-  
+
           <ul class="nav__list">
             <li class="nav__item">
               <a href="index.html" class="nav__link">Home</a>
@@ -31,7 +32,7 @@
               <a href="contact.html" class="nav__link">Contact</a>
             </li>
           </ul>
-  
+
           <div class="nav__menu-btn">
             <img src="img/icons/threeDots.svg" alt="" srcset="" class="dots" />
           </div>
@@ -47,15 +48,15 @@
       </header>
 
       <!-- SECTION WORK -->
-      <section class="work container mar-bot-largest-1">
+      <section class="work container mar-bot-largest-1" id="home-work">
         <div class="work__left">
-          <p class="paragraph-2 mar-bot-large">
+          <p class="work__para paragraph-2 mar-bot-large" id="home-work-text">
             <span>SIMP/DEPT®</span> is a global branding and digital design
             agency building products, services, and eCommerce experiences that
             turn cultural values into company value.
           </p>
 
-          <button class="btn btn__dark">
+          <button class="btn btn__dark" id="home-work-btn">
             <span class="btn-txt">See the work</span>
             <span class="btn__icon-box">
               <img
@@ -72,9 +73,9 @@
       </section>
 
       <!-- SECTION HERO CARDS -->
-      <section class="h-cards container mar-bot-largest-2">
+      <section class="h-cards container mar-bot-largest-2" id="h-cards">
         <div class="h-cards__text paragraph-2">Gallery</div>
-        <div class="h-cards__line">&nbsp;</div>
+        <div class="h-cards__line" id="h-cards-line">&nbsp;</div>
 
         <div class="h-cards__container">
           <!-- card 1 -->
@@ -203,9 +204,9 @@
       </section> -->
 
       <!-- SECTION BANNER -->
-      <section class="banner container section-pad-md">
+      <section class="banner container section-pad-md" id="banner">
         <div class="banner__left">
-          <h2 class="heading-1">SIMP/ DEPT® HELPS BRANDS CONNECT W/ CULTURE</h2>
+          <h2 class="heading-1 banner__heading split-text-target">SIMP/ DEPT® HELPS BRANDS CONNECT W/ CULTURE</h2>
         </div>
 
         <div class="banner__right">
@@ -298,5 +299,10 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Minified UMD bundle -->
+    <script src="https://unpkg.com/split-type"></script>
+
   </body>
 </html>

@@ -21,6 +21,12 @@
     gap: 6rem;
   }
 
+  &__heading {
+    .line {
+      overflow: hidden;
+    }
+  }
+
   &__left {
     overflow: hidden;
 

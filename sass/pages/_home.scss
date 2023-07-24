@@ -40,6 +40,10 @@
     }
   }
 
+  &__para {
+    overflow: hidden;
+  }
+
   &__right {
     flex: 0 0 40%;
     align-self: flex-start;
@@ -125,6 +129,13 @@
     // SEDDEM IN THE VOID
   }
 
+  &__heading {
+
+    .line {
+      overflow: hidden;
+    }
+  }
+
   &__right {
     align-self: stretch;
   }
@@ -135,3 +146,4 @@
     object-fit: cover;
   }
 }
+

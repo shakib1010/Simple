@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/css/main.css" />
     <script defer src="js/script.js"></script>
-    <title>Contact</title>
+    <script defer src="js/animation-contact.js"></script>
+    <title>Simple Contact</title>
   </head>
   <body class="contact">
     <div class="bg-light footer-space">
@@ -47,7 +48,9 @@
         </div>
 
         <div class="contact1__right">
-          <h1 class="heading-1 mar-bot-large">S/D® CONTACT</h1>
+          <h1 id="contact1-title" class="heading-1 mar-bot-large contact1__heading">
+            S/D® CONTACT
+          </h1>
 
           <div class="contact1__right-info-box">
             <h4 class="sub-heading">NEW BUSINESS</h4>
@@ -87,9 +90,9 @@
       </section>
 
       <!-- SECTION CONTACT CARDS -->
-      <section class="c-cards container mar-bot-largest">
+      <section id="c-cards" class="c-cards container mar-bot-largest">
         <div class="c-cards__text paragraph-2">Offices</div>
-        <div class="c-cards__line">&nbsp;</div>
+        <div id="c-cards-line" class="c-cards__line">&nbsp;</div>
 
         <div class="c-cards__container">
           <!-- card 1 -->
@@ -125,8 +128,8 @@
         </div>
       </section>
 
-       <!-- DIVIDER -->
-       <div class="divider divider--dark container section-pad-md">
+      <!-- DIVIDER -->
+      <div class="divider divider--dark container section-pad-md">
         <div class="divider__left">
           <span class="divider__text">SEC.</span>
         </div>
@@ -203,6 +206,7 @@
       </div>
     </footer>
 
+    <!-- IonIcon  -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -211,5 +215,9 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Minified UMD bundle -->
+    <script src="https://unpkg.com/split-type"></script>
   </body>
 </html>
