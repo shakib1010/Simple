@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="dist/css/main.css" />
     <script defer src="js/script.js"></script>
     <script defer src="js/animation-home.js"></script>
+    <script defer src="vanilla-tilt.js"></script>
   </head>
   <body>
     <div class="bg-light footer-space">
@@ -33,17 +34,31 @@
             </li>
           </ul>
 
-          <div class="nav__menu-btn">
+          <!-- <div class="nav__menu-btn">
             <img src="img/icons/threeDots.svg" alt="" srcset="" class="dots" />
-          </div>
+          </div> -->
         </div>
       </nav>
 
       <!-- SECTION HERO -->
       <header class="hero mar-bot-largest-1">
+        <div class="hero__content">
+          <div href="index.html" class="hero__logo-box">
+            <img src="img/startup/SIMP.svg" alt="" class="hero__logo" />
+            <img src="img/startup/Untitled.svg" alt="" class="hero__logo" />
+            <span class="hero__logo-box-3">
+              <img src="img/startup/DEPT®.svg" alt="" class="hero__logo-3" />
+            </span>
+          </div>
+          <p class="hero__logo-p">
+            <span>A simple way to achieve your goal</span>
+          </p>
+        </div>
         <video class="hero__video" autoplay loop>
-          <source src="img/videos/header-bg.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          <source
+            src="img/videos/production_id_5192077 (1080p).mp4"
+            type="video/mp4"
+          />
         </video>
       </header>
 
@@ -58,12 +73,8 @@
 
           <button class="btn btn__dark" id="home-work-btn">
             <span class="btn-txt">See the work</span>
-            <span class="btn__icon-box">
-              <img
-                class="btn__icon"
-                src="img/icons/arrow-forward-outline.svg"
-                alt=""
-              />
+            <span class="btn__icon-box white">
+              <img class="btn__icon" src="img/icons/SADDAM.svg" alt="" />
             </span>
           </button>
         </div>
@@ -127,86 +138,39 @@
       </section>
 
       <!-- advertisement -->
-      <!-- <section class="add mar-top-largest1 hidden bg">
+      <section class="add mar-top-largest1 hidden bg">
         <div class="add__track">
-          <div class="add__item">
-            <img src="img/asics.svg" alt="" srcset="" />
-          </div>
+          <div class="add__items">
+            <img src="img/icons/advertisement/apple.svg" alt="" srcset="" />
 
-          <div class="add__item">
-            <img
-              src="img/icons/advertisement/bxl-apple 1.svg"
-              alt=""
-              srcset=""
-            />
-          </div>
+            <img src="img/icons/advertisement/asics.svg" alt="" srcset="" />
 
-          <div class="add__item">
-            <img src="img/icons/advertisement/Frame.svg" alt="" srcset="" />
-          </div>
+            <img src="img/icons/advertisement/at&t.svg" alt="" srcset="" />
 
-          <div class="add__item">
-            <img src="img/icons/advertisement/svg2191.svg" alt="" srcset="" />
-          </div>
+            <img src="img/icons/advertisement/kfc.svg" alt="" srcset="" />
 
-          <div class="add__item">
-            <img src="img/icons/advertisement/svg2191.svg" alt="" srcset="" />
+            <img src="img/icons/advertisement/patagonia.svg" class="pata" />
           </div>
+          <div class="add__items">
+            <img src="img/icons/advertisement/apple.svg" alt="" srcset="" />
 
-          <div class="add__item">
-            <img src="img/icons/advertisement/svg2191.svg" alt="" srcset="" />
-          </div>
+            <img src="img/icons/advertisement/asics.svg" alt="" srcset="" />
 
-          <div class="add__item">
-            <img src="img/icons/advertisement/svg2191.svg" alt="" srcset="" />
-          </div>
+            <img src="img/icons/advertisement/at&t.svg" alt="" srcset="" />
 
-          <div class="add__item">
-            <img src="img/icons/advertisement/svg2191.svg" alt="" srcset="" />
-          </div>
+            <img src="img/icons/advertisement/kfc.svg" alt="" srcset="" />
 
-         
-          <div class="add__item">
-            <img src="img/asics.svg" alt="" srcset="" />
-          </div>
-
-          <div class="add__item">
-            <img
-              src="img/icons/advertisement/bxl-apple 1.svg"
-              alt=""
-              srcset=""
-            />
-          </div>
-
-          <div class="add__item">
-            <img src="img/icons/advertisement/Frame.svg" alt="" srcset="" />
-          </div>
-
-          <div class="add__item">
-            <img src="img/icons/advertisement/svg2191.svg" alt="" srcset="" />
-          </div>
-
-          <div class="add__item">
-            <img src="img/icons/advertisement/svg2191.svg" alt="" srcset="" />
-          </div>
-
-          <div class="add__item">
-            <img src="img/icons/advertisement/svg2191.svg" alt="" srcset="" />
-          </div>
-
-          <div class="add__item">
-            <img src="img/icons/advertisement/svg2191.svg" alt="" srcset="" />
-          </div>
-          <div class="add__item">
-            <img src="img/icons/advertisement/svg2191.svg" alt="" srcset="" />
+            <img src="img/icons/advertisement/patagonia.svg" class="pata" />
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- SECTION BANNER -->
       <section class="banner container section-pad-md" id="banner">
         <div class="banner__left">
-          <h2 class="heading-1 banner__heading split-text-target">SIMP/ DEPT® HELPS BRANDS CONNECT W/ CULTURE</h2>
+          <h2 class="heading-1 banner__heading split-text-target">
+            SIMP/ DEPT® HELPS BRANDS CONNECT W/ CULTURE
+          </h2>
         </div>
 
         <div class="banner__right">
@@ -303,6 +267,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <!-- Minified UMD bundle -->
     <script src="https://unpkg.com/split-type"></script>
-
   </body>
 </html>

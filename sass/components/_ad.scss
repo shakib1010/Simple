@@ -4,34 +4,33 @@
   margin-bottom: 400px;
 
   &__track {
-    width: calc(25rem * 16);
-    display: flex;
-    align-items: center;
-    border: 2px solid $secondary-color;
+    overflow: hidden;
+    padding: 3rem 0;
+    border-top: 2px solid $secondary-color;
+    border-bottom: 2px solid $secondary-color;
+    white-space: nowrap;
   }
 
-  &__item {
-    width: 25rem;
-    height: auto;
-    animation-name: slide;
-    animation-timing-function: linear;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    padding: 3rem;
-    text-align: center;
-
+  &__items {
+    display: inline-block;
+    animation: 5s slide infinite linear;
     img {
-      max-width: 100%;
+      margin: 0 10rem;
+      height: 5rem;
     }
   }
 }
 
+.pata {
+  max-width: 200%;
+}
+
 @keyframes slide {
-  0% {
+  from {
     transform: translateX(0);
   }
 
-  100% {
-    transform: translateX(calc(-250px * 8));
+  to {
+    transform: translateX(-100%);
   }
 }

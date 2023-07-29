@@ -1,4 +1,4 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 
 // //////////// ABOUT HEADER SECTION ////////////////
 .about-header {
@@ -14,7 +14,7 @@
   &__heading-1 {
     text-align: end;
     margin-bottom: -14rem;
-    
+
     .line {
       overflow: hidden;
     }
@@ -128,7 +128,7 @@
     &--1 {
       grid-row: 1 / 9;
       grid-column: 1 / 9;
-      background-color: orangered;
+      // background-color: orangered;
 
       @include respond(bp-6) {
         grid-row: 1 / 5;
@@ -139,7 +139,7 @@
     &--2 {
       grid-row: 3 / 11;
       grid-column: 3 / 11;
-      background-color: yellowgreen;
+      // background-color: yellowgreen;
 
       @include respond(bp-6) {
         grid-row: 5 / 9;
@@ -150,7 +150,7 @@
     &--3 {
       grid-row: 5 / 13;
       grid-column: 5 / 13;
-      background-color: powderblue;
+      // background-color: powderblue;
 
       @include respond(bp-6) {
         grid-row: 9 / 13;
@@ -158,12 +158,27 @@
       }
     }
   }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    transition: all ease 1.1s;
+    transform: scale(0.8);
+
+    &:hover {
+      z-index: 1;
+      transform: scale(1);
+    }
+  }
 }
 
 // ////// ABOUT PAGE3 SECTION ///////////
 .page3 {
   overflow: hidden;
-  
+
   &__line {
     height: 3px;
     background-color: $primary-color;
@@ -187,8 +202,6 @@
     grid-template-columns: 1fr;
     gap: 6rem;
   }
-
-
 
   &__left {
     // SEDDEM IN VOID
@@ -217,8 +230,6 @@
       gap: 4rem;
     }
 
-
-
     &-box {
       width: 80%;
     }
@@ -229,7 +240,7 @@
   }
 
   &__sub-heading-number {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 9.6rem;
     font-weight: 700;
     text-transform: uppercase;

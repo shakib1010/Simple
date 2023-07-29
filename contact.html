@@ -32,9 +32,9 @@
             </li>
           </ul>
 
-          <div class="nav__menu-btn">
+          <!-- <div class="nav__menu-btn">
             <img src="img/icons/threeDots.svg" alt="" srcset="" class="dots" />
-          </div>
+          </div> -->
         </div>
       </nav>
 
@@ -43,12 +43,18 @@
       <section class="contact1 mar-bot-largest-2 container">
         <div class="contact1__left">
           <div class="contact1__left-img-box">
-            <img src="img/pexels-athena-2043590.jpg" alt="" />
+            <img
+              src="img/Contact/markus-winkler-q3QPw37J6Xs-unsplash.jpg"
+              alt=""
+            />
           </div>
         </div>
 
         <div class="contact1__right">
-          <h1 id="contact1-title" class="heading-1 mar-bot-large contact1__heading">
+          <h1
+            id="contact1-title"
+            class="heading-1 mar-bot-large contact1__heading"
+          >
             S/D® CONTACT
           </h1>
 
@@ -80,7 +86,12 @@
             </a>
           </div>
 
-          <button class="btn btn__dark">APPLY NOW</button>
+          <button class="btn btn__dark" id="home-work-btn">
+            <span class="btn-txt">Apply now</span>
+            <span class="btn__icon-box white">
+              <img class="btn__icon" src="img/icons/SADDAM.svg" alt="" />
+            </span>
+          </button>
 
           <p>
             EASY TO UNDERSTAND.<br />IMPOSSIBLE TO IGNORE.™<br />BASIC/DEPT®,
@@ -99,30 +110,32 @@
           <div class="card card--contact mar-bot-largest">
             <div class="card__img-box card__img-box--contact mar-bot-small">
               <img
-                src="img/alain-bonnardeaux-Bsf_yk3HcsE-unsplash.jpg"
+                src="img/Contact/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg"
                 alt=""
                 class="card__img"
               />
             </div>
             <h3 class="card__title sub-heading-card mar-bot-smallest">
-              Patagonia
+              Dhaka(Banasree)
             </h3>
             <p class="paragraph-card">
-              A CENTURY-OLD SPORTS BRAND FINDING ITS PLACE IN CULTURE
+              House: 81, Block: E, South Banasree, Khilgaon, Dhaka-1219
             </p>
           </div>
           <!-- card 2 -->
           <div class="card card--contact">
             <div class="card__img-box card__img-box--contact mar-bot-small">
               <img
-                src="img/jakob-owens-A4579vLezz8-unsplash.jpg"
+                src="img/Contact/nastuh-abootalebi-ZtC4_rPCRXA-unsplash.jpg"
                 alt=""
                 class="card__img"
               />
             </div>
-            <h3 class="card__title sub-heading-card mar-bot-smallest">Asics</h3>
+            <h3 class="card__title sub-heading-card mar-bot-smallest">
+              Dhaka(Gulshan)
+            </h3>
             <p class="paragraph-card">
-              A CENTURY-OLD SPORTS BRAND FINDING ITS PLACE IN CULTURE
+              House: 17/J, Lane: 2-1, Gulshan, Dhaka-2077
             </p>
           </div>
         </div>
@@ -141,8 +154,8 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer footer--dark mar-top-largest1">
-      <div class="container footer__container">
+    <footer class="footer footer--dark">
+      <div class="footer__top container">
         <div class="footer__left">
           <img src="img/logoxxx.svg" alt="" class="footer__logo" />
 
@@ -153,6 +166,7 @@
               name="f-name"
               id="f-name"
               placeholder="example@gmail.com"
+              required
             />
             <button type="submit" class="footer__btn">
               <img src="img/arrow-light.svg" alt="" />
@@ -161,47 +175,55 @@
         </div>
 
         <div class="footer__right">
-          <h4 class="sub-heading">
+          <h4 class="heading-4">
             We collaborate with ambitious brands and people. Let's build.
             biz@basicagency.com
           </h4>
 
           <div class="footer__infos">
             <div>
-              <h5 class="paragraph3 sub-heading-card">SOCIAL</h5>
-              <ul>
-                <li>Instagram</li>
-                <li>Twitter</li>
-                <li>Facebook</li>
-                <li>Linkedin</li>
+              <h5 class="paragraph-3">SOCIAL</h5>
+              <ul class="footer__list">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Linkedin</a></li>
               </ul>
             </div>
 
             <div>
-              <h5 class="paragraph3 sub-heading-card">INITIATIVES</h5>
-              <ul>
-                <li>Crafted</li>
-                <li>Applied</li>
-                <li>Brandbeats</li>
-                <li>Moves</li>
-                <li>Good</li>
+              <h5 class="paragraph-3">INITIATIVES</h5>
+              <ul class="footer__list">
+                <li><a href="#">Crafted</a></li>
+                <li><a href="#">Applied</a></li>
+                <li><a href="#">Brandbeats</a></li>
+                <li><a href="#">Moves</a></li>
+                <li><a href="#">Good</a></li>
               </ul>
             </div>
 
             <div>
-              <h5 class="paragraph3 sub-heading-card">OFFICES</h5>
+              <h5 class="paragraph-3">OFFICES</h5>
               <ul>
-                <li>San Diego - CA</li>
-                <li>New York - NY</li>
-                <li>Bay Area - CA</li>
-                <li>St. Louis - MO</li>
-                <li>Amsterdam - NL</li>
-                <li>London - EN</li>
-                <li>Berlin - GE</li>
-                <li>Argentina</li>
+                <li><a href="#">San Diego - CA</a></li>
+                <li><a href="#">New York - NY</a></li>
+                <li><a href="#">Bay Area - CA</a></li>
+                <li><a href="#">St. Louis - MO</a></li>
+                <li><a href="#">Amsterdam - NL</a></li>
+                <li><a href="#">London - EN</a></li>
+                <li><a href="#">Berlin - GE</a></li>
+                <li><a href="#">Argentina</a></li>
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom-container container">
+          <p class="paragraph">BASIC/DEPT®, INC 10 - 23©</p>
+          <p class="paragraph">EASY TO UNDERSTAND, IMPOSSIBLE TO IGNORE.™</p>
+          <p class="paragraph">TERMS, PRIVACY POLICY</p>
         </div>
       </div>
     </footer>

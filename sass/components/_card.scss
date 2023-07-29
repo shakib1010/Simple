@@ -1,9 +1,35 @@
 .card {
   &__img-box {
+    position: relative;
     width: 100%;
     max-height: 60rem;
     margin-bottom: 2rem;
     overflow: hidden;
+    transition: all 0.5s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: skewX(25deg);
+      height: 1600px;
+      width: 10%;
+      top: -40px;
+      right: 490px;
+      transition: all 0.3s ease-in-out;
+      transform-origin: center;
+    }
+
+    &:hover::before {
+      position: absolute;
+      top: -40px;
+      right: -460px;
+      display: block;
+    }
+
+    &:hover {
+      transform: translateY(-1.5rem);
+    }
 
     &--contact {
       height: 90%;
@@ -16,10 +42,14 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+
+    // &:hover {
+    //   transform: scale(0.9);
+    // }
   }
 
   &__title {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 2.4rem;
     font-weight: 500;
     text-transform: uppercase;

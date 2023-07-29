@@ -32,49 +32,65 @@
             </li>
           </ul>
 
-          <div class="nav__menu-btn">
+          <!-- <div class="nav__menu-btn">
             <img src="img/icons/threeDots.svg" alt="" srcset="" class="dots" />
-          </div>
+          </div> -->
         </div>
       </nav>
 
       <!-- section goes here -->
       <header class="news1 container mar-bot-largest-1">
-          <div class="news1__title-box">
-            <h1 id="news1-title" class="news1__title heading-1 sub-heading-number">
-              MAKE EXQUISITE DESIGNS TO GET HIRED.
-            </h1>
+        <div class="news1__title-box">
+          <h1
+            id="news1-title"
+            class="news1__title heading-1 sub-heading-number"
+          >
+            MAKE EXQUISITE DESIGNS TO GET HIRED.
+          </h1>
 
-            <p class="news1__title--sub">
-              EASY TO UNDERSTAND.<br />IMPOSSIBLE TO IGNORE.™<br />BASIC/DEPT®,
-              INC 10 - 23©
-            </p>
-          </div>
+          <p class="news1__title--sub">
+            EASY TO UNDERSTAND.<br />IMPOSSIBLE TO IGNORE.™<br />BASIC/DEPT®,
+            INC 10 - 23©
+          </p>
+        </div>
 
-          <div class="news1__img-container">
-            <figure class="news1__img-box">
-              <img src="img/alireza-khoddam-z4O2cuwP8Qg-unsplash.jpg" alt="" class="news1__img" />
-            </figure>
-            <div class="news1__img-caption-box">
-              <div class="news1__img-caption">Openings (01)</div>
-              <div class="news1__img-caption">Openings (05)</div>
-            </div>
+        <div class="news1__img-container">
+          <figure class="news1__img-box">
+            <img
+              src="img/alireza-khoddam-z4O2cuwP8Qg-unsplash.jpg"
+              alt=""
+              class="news1__img"
+            />
+          </figure>
+          <div class="news1__img-caption-box">
+            <div class="news1__img-caption">Openings (01)</div>
+            <div class="news1__img-caption">Openings (05)</div>
           </div>
+        </div>
 
-          <div class="news1__info">
-            <p class="news1__info-text paragraph-2">
-              As part of Dept, we operate offices across the world. We’re always
-              looking to connect with individuals who want to make the best work
-              of their lives with the world’s greatest brands. If you’re
-              interested in working with us or learning more, drop us a note,
-              portfolio link, or résumé. We’ll take anything you’ve got.
-            </p>
-            <button class="btn btn__light">Apply Here</button>
-          </div>
+        <div class="news1__info">
+          <p class="news1__info-text paragraph-2">
+            As part of Dept, we operate offices across the world. We’re always
+            looking to connect with individuals who want to make the best work
+            of their lives with the world’s greatest brands. If you’re
+            interested in working with us or learning more, drop us a note,
+            portfolio link, or résumé. We’ll take anything you’ve got.
+          </p>
+          <button class="btn btn__light" id="home-work-btn">
+            <span class="btn-txt">Apply here</span>
+            <span class="btn__icon-box">
+              <img
+                class="btn__icon"
+                src="img/icons/arrow-forward-outline.svg"
+                alt=""
+              />
+            </span>
+          </button>
+        </div>
       </header>
 
       <!-- ACCORDIONS -->
-      <section class="accordions container section-pad-sm">
+      <!-- <section class="accordions container section-pad-sm">
         <div class="accordion">
           <div class="accordion__heading">
             <p class="accordion__title">Creative</p>
@@ -126,7 +142,10 @@
             </div>
           </div>
 
-          <div class="accordion__body" id="accordion-body">
+          <div
+            class="accordion__body accordion__body--open"
+            id="accordion-body"
+          >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
               voluptas delectus magnam dolore distinctio soluta, officia, odio
@@ -156,13 +175,84 @@
               aspernatur id nam quasi sint quas illum? Nesciunt numquam
               perferendis voluptas porro labore sint molestias ratione neque?
             </p>
+          </div>
+        </div>
+      </section> -->
+      <section class="container section-pad-sm">
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">What is Web Development?</div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Web Development broadly refers to the tasks associated with
+                developing functional websites and applications for the
+                Internet. The web development process includes web design, web
+                content development, client-side/server-side scripting and
+                network security configuration, among other tasks.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">What is HTML?</div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                HTML, aka HyperText Markup Language, is the dominant markup
+                language for creating websites and anything that can be viewed
+                in a web browser.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              What are some basic technical skills of a Front-End developer?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                <ul style="padding-left: 1rem">
+                  <li>HTML, CSS, JavaScript</li>
+                  <li>Frameworks (CSS and JavaScript frameworks)</li>
+                  <li>Responsive Design</li>
+                  <li>Version Control/Git</li>
+                  <li>Testing/Debugging</li>
+                  <li>Browser Developer Tools</li>
+                  <li>Web Performance</li>
+                  <li>SEO (Search Engine Optimization)</li>
+                  <!-- <li>CSS Preprocessing</li> -->
+                  <li>Command Line</li>
+                  <li>CMS (Content Management System)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">What is HTTP?</div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                HTTP, aka HyperText Transfer Protocol, is the underlying
+                protocol used by the World Wide Web and this protocol defines
+                how messages are formatted and transmitted, and what actions Web
+                servers and browsers should take in response to various
+                commands.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">What is CORS?</div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                CORS, aka Cross-Origin Resource Sharing, is a mechanism that
+                enables many resources (e.g. images, stylesheets, scripts,
+                fonts) on a web page to be requested from another domain outside
+                the domain from which the resource originated.
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </div>
 
-    <footer class="footer mar-top-largest1 footer--light">
-      <div class="container footer__container">
+    <footer class="footer footer--light">
+      <div class="footer__top container">
         <div class="footer__left">
           <img src="img/logoxxx-dark.svg" alt="" class="footer__logo" />
 
@@ -173,72 +263,80 @@
               name="f-name"
               id="f-name"
               placeholder="example@gmail.com"
+              required
             />
             <button type="submit" class="footer__btn">
-              <img src="img/arrow-dark.svg" alt="" />
+              <img src="img/arrow-light.svg" alt="" />
             </button>
           </form>
         </div>
 
         <div class="footer__right">
-          <h4 class="sub-heading">
+          <h4 class="heading-4">
             We collaborate with ambitious brands and people. Let's build.
             biz@basicagency.com
           </h4>
 
           <div class="footer__infos">
             <div>
-              <h5 class="paragraph3 sub-heading-card">SOCIAL</h5>
-              <ul>
-                <li>Instagram</li>
-                <li>Twitter</li>
-                <li>Facebook</li>
-                <li>Linkedin</li>
+              <h5 class="paragraph-3">SOCIAL</h5>
+              <ul class="footer__list">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Linkedin</a></li>
               </ul>
             </div>
 
             <div>
-              <h5 class="paragraph3 sub-heading-card">INITIATIVES</h5>
-              <ul>
-                <li>Crafted</li>
-                <li>Applied</li>
-                <li>Brandbeats</li>
-                <li>Moves</li>
-                <li>Good</li>
+              <h5 class="paragraph-3">INITIATIVES</h5>
+              <ul class="footer__list">
+                <li><a href="#">Crafted</a></li>
+                <li><a href="#">Applied</a></li>
+                <li><a href="#">Brandbeats</a></li>
+                <li><a href="#">Moves</a></li>
+                <li><a href="#">Good</a></li>
               </ul>
             </div>
 
             <div>
-              <h5 class="paragraph3 sub-heading-card">OFFICES</h5>
+              <h5 class="paragraph-3">OFFICES</h5>
               <ul>
-                <li>San Diego - CA</li>
-                <li>New York - NY</li>
-                <li>Bay Area - CA</li>
-                <li>St. Louis - MO</li>
-                <li>Amsterdam - NL</li>
-                <li>London - EN</li>
-                <li>Berlin - GE</li>
-                <li>Argentina</li>
+                <li><a href="#">San Diego - CA</a></li>
+                <li><a href="#">New York - NY</a></li>
+                <li><a href="#">Bay Area - CA</a></li>
+                <li><a href="#">St. Louis - MO</a></li>
+                <li><a href="#">Amsterdam - NL</a></li>
+                <li><a href="#">London - EN</a></li>
+                <li><a href="#">Berlin - GE</a></li>
+                <li><a href="#">Argentina</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom-container container">
+          <p class="paragraph">BASIC/DEPT®, INC 10 - 23©</p>
+          <p class="paragraph">EASY TO UNDERSTAND, IMPOSSIBLE TO IGNORE.™</p>
+          <p class="paragraph">TERMS, PRIVACY POLICY</p>
+        </div>
+      </div>
     </footer>
 
-       <!-- IonIcon  -->
-       <script
-       type="module"
-       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-     ></script>
-     <script
-       nomodule
-       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-     ></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-     <!-- Minified UMD bundle -->
-     <script src="https://unpkg.com/split-type"></script>
-
+    <!-- IonIcon  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Minified UMD bundle -->
+    <script src="https://unpkg.com/split-type"></script>
   </body>
 </html>

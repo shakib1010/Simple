@@ -3,14 +3,16 @@
   padding: 1.5rem 3.5rem;
   background-color: transparent;
   text-transform: uppercase;
-
   border-radius: 10rem;
   letter-spacing: 0.1rem;
   color: $primary-color;
   position: relative;
   transition: 0.4s all ease-in-out;
-  // overflow: hidden;
+  overflow: hidden;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  // justify-content: flex-start;
 
   &__light {
     color: $primary-color;
@@ -23,18 +25,16 @@
   }
 
   &__icon-box {
-    background-size: contain;
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: #fff;
+    position: absolute;
+    right: -45px;
+    transition: 0.5s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
     overflow: hidden;
   }
 
@@ -50,30 +50,28 @@
   }
 
   &:hover &__icon-box {
-    right: 2px;
-    bottom: 3.5px;
+    right: 5px;
+    background-color: #fff;
     border-radius: 100px;
   }
 
   &__icon {
-    position: absolute;
-    top: 50%;
-    left: -100px;
-    transform: translate(-50%, -50%);
-    height: 3rem;
     width: 3rem;
-    transition: all 0.3s ease-in;
-    opacity: 0;
+    height: 3rem;
+    transition: all 0.6s ease-in-out;
     transform-origin: center;
-    // fill: $primary-color;
-    // color: $primary-color;
+    position: absolute;
+    right: 100%;
   }
 
   &:hover &__icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
     z-index: 4;
     opacity: 1;
+    right: 10%;
   }
+}
+
+.white {
+  background-color: $secondary-color !important;
 }
